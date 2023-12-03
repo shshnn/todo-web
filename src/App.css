@@ -1,0 +1,120 @@
+*{
+  line-height: normal;
+  margin:0;
+  padding:0;
+}
+html,body,#root,#root>div{
+  height: 100%;
+}
+
+#header{
+  
+  height: 160px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+}
+
+#header-area{
+
+  max-width: 1024px;
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  
+
+}
+#header-area > .logo {
+  width: 100px;
+  height: 60px;
+  margin:0 auto;
+  
+}
+#logoButton{
+  background-color: transparent;
+  border: none;
+  width: 100px;
+  height: 60px;
+  font-size: 2.1em;
+  font-family: 'Kanit', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+
+}
+#logoButton:hover{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#menu-area{
+ 
+  height: 50px;
+  
+  border-bottom: 1px solid #00D8FF;
+  display: flex;
+  background-color: #04879edd;
+  justify-content: space-between;
+
+}
+#menu-wrap{
+  max-width:  1024px;
+  height: 100%;
+  margin :0 auto;
+  display: flex;
+  align-items: center;
+   border-bottom: 1px solid #00D8FF;
+ 
+   justify-content: space-between;
+  flex: auto;
+   
+
+
+
+
+ }
+ ul{
+   height: 30px;
+   text-align: center;
+   list-style: none;
+   
+ }
+ ul > li{
+   display: inline-block;
+   
+   
+   font-family: 'Kanit', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+ 
+ }
+ .manu-li{
+   height: 30px;
+   position: relative;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   display: inline-block;
+   padding: 5px 10px 5px ;
+ }
+ .manu-li-a{
+   text-decoration: none;
+   color: #f6f5f5e5;
+ }
+ .manu-li >.manu-border{
+   border-left: 1px solid #f6f5f5e5;
+   padding-left: 20px;
+ }
+#body{
+  min-height: 100vh;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 24px;
+
+}
+
+#footer{
+  height: 200px;
+  background-color: #cdf3fa
+}
+

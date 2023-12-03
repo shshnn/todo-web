@@ -1,0 +1,119 @@
+.food-date-wrap{
+    margin-top: 24px;
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.food-date-area{
+    width: 600px;
+    display: flex;
+    margin: 0 auto;
+}
+.food-list-wrap{
+    margin-top: 10px;
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.food-list-area{
+    width: 600px;
+    display: flex;
+    margin: 0 auto;
+}
+#food-list{
+    width: 460px;
+    height: 415px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    display: flex;
+
+}
+#food-list-todo{
+    height: 110px;
+    margin:auto;
+    margin-top: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#food-item{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    float: left;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    border-radius: 5%;
+    border: 1px solid #098fa6;
+}
+.food-img-wrap{
+    text-align: center;
+}
+.food-contents{
+    display: flex;
+    margin: 0 auto;
+}
+.food-label{
+    margin:0 auto;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+
+}
+.food-label-style{
+    background-color: #FFDAB9;
+    margin-top: 2.5px;
+    border-radius:  5px;
+    text-align: center;
+}
+.food-text{
+    margin:0 auto;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.food-name{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2.5px;
+
+}
+.food-kcal{
+    font-size: 12px;
+    margin-top: 2.5px;
+}
+.eat-date{
+    font-size: 12px;
+    margin-top: 2.5px;
+}
+.eat-time{
+    font-size: 12px;
+    margin-top: 2.5px;
+}
+.food-place{
+    font-size: 12px;
+    margin-top: 2.5px;
+}
+.food-img{
+    width: 170px;
+    margin-top: 5px;
+    height: 100px;
+}
+.food-font{
+    font-size: 12px;
+    font-weight: 200;
+}
+.no-food{
+    text-align: center;
+}
+#food-plus-btn{
+    border-radius: 50%;
+    border :2px solid #00D8FF;
+    align-items: center;
+    justify-content: center;
+    margin-left: 240px;
+}
+#food-plus-btn:hover{
+    color: #00ff59;
+}

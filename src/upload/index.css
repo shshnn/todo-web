@@ -1,0 +1,46 @@
+#upload-wrap{
+    
+    margin-top: 24px;
+    width: 100%;
+}
+#upload-container{
+    width: 300px;
+    margin: 0 auto;
+    align-items: center;
+}
+#upload-img-placeholder{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(230,230,230);
+
+}
+#upload-img-placeholder > img{
+    width: 50px;
+    height: 50px;
+}
+#upload-img-placeholder > span{
+    font-size: 15px;
+    color: rgb(195,194,204);
+}
+.upload-label{
+    margin-right: 10px;
+}
+#upload-img{
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+    object-fit: contain;
+}
+.ant-picker-time-panel{
+    height: 150px;
+}
+.ant-picker-time-panel-column{
+    height: 150px;
+}
+#submit-button{
+    float: right;
+}

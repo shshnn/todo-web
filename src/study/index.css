@@ -1,0 +1,118 @@
+.study-date-wrap{
+    margin-top: 24px;
+    display: flex;
+}
+.study-date-area{
+    width: 600px;
+    display: flex;
+    margin: 0 auto;
+    
+}
+.study-list-wrap{
+    margin-top: 10px;
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.study-list-area{
+    width: 600px;
+    display: flex;
+    margin: 0 auto;
+}
+#study-list{
+    width: 460px;
+    height: 415px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius:5px ;
+    display: flex;
+}
+#study-list-todo{
+    height: 100%;
+    margin: auto;
+    margin-top: 5px;
+}
+#study-item{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    float: left;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    border-radius: 5%;
+    border: 1px solid #098fa6;
+}
+.study-img-wrap{
+    
+    text-align: center
+}
+
+.study-contents{
+    display: flex;
+    margin: 0 auto;
+}
+.study-label{
+    margin:0 auto;
+    margin-right: 10px;
+    margin-top: 5px;
+
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.study-label-style{
+    background-color: 	#FFDAB9	;
+    margin-top: 2.5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.study-text{
+    margin: 0 auto;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.study-name{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2.5px;
+}
+.study-inwon{
+    font-size: 12px;
+    margin-top: 2.5px;
+}
+.study-date{
+    font-size: 12px;
+    margin-top: 2.5px;
+
+}
+.study-time{
+    font-size: 12px;
+    margin-top: 2.5px;
+
+}
+.study-place{
+    font-size: 12px;
+    margin-top: 2.5px;
+}
+.study-img{
+    width: 170px;
+    margin-top: 5px;
+    height: 100px;
+}
+.study-font{
+    font-size: 12px;
+    font-weight: 200;
+}
+.no-study{
+    text-align: center;
+}
+#study-plus-btn{
+    border-radius: 50%;
+    border :2px solid #00D8FF;
+    align-items: center;
+    justify-content: center;
+    margin-left: 240px;
+}
+#study-plus-btn:hover{
+    color: #00ff59;
+}

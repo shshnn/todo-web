@@ -1,0 +1,145 @@
+.main-wrap{
+    width: 100%;
+    display: flex;
+    margin-top: 24px;
+    margin-left: 10px;
+    flex-direction: column;
+}
+.main-date-area{
+   width: 100%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10px; 
+}
+.main-date{
+    width: 200px;
+}
+.main-contents{
+    width: 100%;
+    height: 900px;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main-todo{
+    width: 100%;
+    height: 300px;
+    
+}
+.todo-ck{
+    margin-left: 5px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main-title-t{
+    font-size: 23px;
+    border-bottom :1px solid rgb(230, 230, 230)
+}
+.main-title-s{
+    font-size: 23px;
+   
+    border-bottom :1px solid rgb(230, 230, 230)
+}
+.main-title-f{
+    font-size: 23px;
+   
+    border-bottom :1px solid rgb(230, 230, 230)
+}
+.main-study{
+    width: 100%;
+    height: 300px;
+   
+
+}
+
+.main-study-text{
+    
+    margin-top: 5px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+}
+.main-study-text>img{
+    width: 50px;
+ height: 50px;
+}
+.main-study-text>span{
+    font-size: 18px;
+    margin-left: 8px;
+    
+}
+.main-food{
+    width: 100%;
+    height: 300px;
+}
+.main-food-text{
+    
+    margin-top: 5px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+}
+.main-food-text>img{
+    width: 50px;
+ height: 50px;
+}
+.main-food-text>span{
+    font-size: 18px;
+    margin-left: 8px;
+    
+}
+.form-i{
+    display:flex;
+    justify-content:  space-between;
+}
+
+.form-input{
+    width: 450px;
+}
+.form-btn{
+    width: 50px;
+}
+#todo-input{
+    width: 400px;
+    display: flex;
+    height: 35px;
+    border-radius: 25px;
+    border :2px solid #00D8FF;
+    outline-color: #00ff59;
+   
+}
+.ant-form-item-explain-error{
+    margin-left: 15px;
+}
+#todo-input::placeholder{
+    color:#098fa6;
+    text-align: center;
+}
+#todo-plus-btn{
+    border-radius: 50%;
+    border :2px solid #00D8FF;
+    align-items: center;
+    justify-content: center;
+}
+#todo-plus-btn:hover{
+    color: #00ff59;
+}
+.todo-list-wrap{
+    margin-top: 10px;
+    display: flex;
+}
+.todo-list-area{
+    width: 600px;
+    display: flex;
+    margin: 0 auto;
+}
+#todo-list{
+    width: 500px;
+    height: 405px;
+    border: 2px solid #098fa6;
+}
+#todo-list-todo{
+    width: 100%;
+    height: 40px;
+    border-bottom:1px solid #00D8FF;
+}
