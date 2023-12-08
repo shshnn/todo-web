@@ -95,7 +95,7 @@ function MainPage(){
         }).catch(function(error){
             console.log('에러!!');
             console.log(error); 
-        });
+        }); 
     }
     const endChangeTodo = (todoId) =>{
         axios.post(`${API_URL}/todos/end/${todoId}`)

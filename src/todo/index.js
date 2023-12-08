@@ -147,7 +147,7 @@ return (
                                     endChangeTodo(e.target.id)}} className="todo-ck" checked={false}>
                         
                         {todos.todo_contents} 
-                        </Checkbox>   
+                        </Checkbox>    
                     )
                 }
                 </div>
