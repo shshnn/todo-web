@@ -94,7 +94,7 @@ function MainPage(){
             console.log(foods)
         }).catch(function(error){
             console.log('에러!!');
-            console.log(error);
+            console.log(error); 
         });
     }
     const endChangeTodo = (todoId) =>{

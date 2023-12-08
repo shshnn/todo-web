@@ -61,7 +61,7 @@
 #todo-list{
     width: 500px;
     height: 405px;
-    border: none;
+    border: none; 
 }
 #todo-list-todo{
     width: 100%;

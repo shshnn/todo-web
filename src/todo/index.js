@@ -136,7 +136,7 @@ return (
                    return(
 
                     <div id="todo-ck-style" key={index}>
-                    {
+                    { 
                         
                         todos.end_yn==='Y'? (
                             <Checkbox id={todos.id} onChange={(e)=>{

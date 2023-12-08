@@ -11,9 +11,9 @@ function ToList({todoList}){
         axios.post(`${API_URL}/todos/end/${todoId}`)
         .then(function(result){
             console.log("end::::");
-            
+
         }).catch(function(error){
-            console.error(error);
+            console.error(error); 
         });
     }
 return (
