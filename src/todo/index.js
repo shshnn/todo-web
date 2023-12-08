@@ -140,7 +140,7 @@ return (
                         
                         todos.end_yn==='Y'? (
                             <Checkbox id={todos.id} onChange={(e)=>{
-                                endChangeTodo(e.target.id)
+                                endChangeTodo(e.target.id);
                             }} className="todo-ck"  defaultChecked disabled >  {todos.todo_contents}</Checkbox>
                             ):(
                                 <Checkbox id={todos.id} onChange={(e)=>{

@@ -102,7 +102,7 @@ function MainPage(){
         .then(function(result){
             console.log("end::::");
             getLoadTodo(selectedDate);
-        }).catch(function(error){
+        }).catch(function(error){ 
             console.error(error);
         });
     }
