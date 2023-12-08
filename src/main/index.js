@@ -101,7 +101,7 @@ function MainPage(){
         axios.post(`${API_URL}/todos/end/${todoId}`)
         .then(function(result){
             console.log("end::::");
-            getLoadTodo(selectedDate);
+            getLoadTodo(selectedDate); 
         }).catch(function(error){ 
             console.error(error);
         });

@@ -145,7 +145,7 @@ return (
                             ):(
                                 <Checkbox id={todos.id} onChange={(e)=>{
                                     endChangeTodo(e.target.id)}} className="todo-ck" checked={false}>
-                        
+                         
                         {todos.todo_contents} 
                         </Checkbox>    
                     )
