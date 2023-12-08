@@ -27,12 +27,14 @@ function MainPage(){
     let todo_date = new Date(); 
 
     const date = year +"-"+month+"-"+day;
-    // const [selectedDate, setSelectedDate] = useState(new Date());
+    const [selectedDate, setSelectedDate] = useState(new Date());
     const [todos, setTodos] = useState([]);
     const [studies, setStudies] = useState([]);
     const [foods, setFoods] = useState([]);
     
         useEffect(function(){
+            setSelectedDate(date);
+           
             getLoadTodo(date);
             getLoadStudy(date);
             getLoadFood(date);
@@ -95,7 +97,15 @@ function MainPage(){
             console.log(error);
         });
     }
-
+    const endChangeTodo = (todoId) =>{
+        axios.post(`${API_URL}/todos/end/${todoId}`)
+        .then(function(result){
+            console.log("end::::");
+            getLoadTodo(selectedDate);
+        }).catch(function(error){
+            console.error(error);
+        });
+    }
 
 return (
         <div>
@@ -108,7 +118,7 @@ return (
             <ConfigProvider locale={locale}>
             <DatePicker initialValues ={dayjs(todo_date).format('YYYY-MM-DD')}
             onChange={(value,dateString)=>{
-                // setSelectedDate(dateString);
+                setSelectedDate(dateString);
                 getLoadTodo(dateString);
                 getLoadStudy(dateString);
                 getLoadFood(dateString);
@@ -131,9 +141,12 @@ return (
                         {
                             
                             todos.end_yn==='Y'? (
-                                <Checkbox className="todo-ck"  defaultChecked disabled >  {todos.todo_contents}</Checkbox>
+                                <Checkbox id={todos.id} onChange={(e)=>{
+                                    endChangeTodo(e.target.id)
+                                }} className="todo-ck"  defaultChecked disabled >  {todos.todo_contents}</Checkbox>
                                 ):(
-                                    <Checkbox  className="todo-ck" >
+                                    <Checkbox id={todos.id} onChange={(e)=>{
+                                        endChangeTodo(e.target.id)}} className="todo-ck" >
                             
                             {todos.todo_contents}
                             </Checkbox>   

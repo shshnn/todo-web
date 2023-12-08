@@ -1,10 +1,10 @@
 import "../todo/index.css";
-import {Button, Form, message,ConfigProvider,DatePicker, Divider} from "antd";
+import {Button, Form, message,ConfigProvider,DatePicker, Divider,Checkbox} from "antd";
 import {PlusOutlined } from "@ant-design/icons";
 import locale from 'antd/locale/ko_KR';
 import dayjs from "dayjs";
 import customParseFormat from 'dayjs/plugin/customParseFormat';
-import ToList from "../todo/tolist";
+// import ToList from "../todo/tolist";
 import axios from "axios";
 import { API_URL } from "../config/constants";
 import {  useState,useEffect,useRef } from "react";
@@ -34,6 +34,7 @@ function Todo(){
     const [todos, setTodos] = useState([]);
     
         useEffect(function(){
+            setSelectedDate(date);
             getLoadTodo(date);
         },[]);
 
@@ -56,7 +57,15 @@ function Todo(){
             console.log(error);
         });
     }
-
+    const endChangeTodo = (todoId) =>{
+        axios.post(`${API_URL}/todos/end/${todoId}`)
+        .then(function(result){
+            console.log("end::::");
+            getLoadTodo(selectedDate);
+        }).catch(function(error){
+            console.error(error);
+        });
+    }
 
     const onsubmit = (values) => {
         todo_date = dayjs(selectedDate).format("YYYY-MM-DD");
@@ -76,6 +85,7 @@ function Todo(){
         });
     }
 
+    
 return (
         <div>
 
@@ -125,7 +135,22 @@ return (
                 todos.map(function(todos,index){
                    return(
 
-                       <ToList todoList={todos} key={todos.id}/>
+                    <div id="todo-ck-style" key={index}>
+                    {
+                        
+                        todos.end_yn==='Y'? (
+                            <Checkbox id={todos.id} onChange={(e)=>{
+                                endChangeTodo(e.target.id)
+                            }} className="todo-ck"  defaultChecked disabled >  {todos.todo_contents}</Checkbox>
+                            ):(
+                                <Checkbox id={todos.id} onChange={(e)=>{
+                                    endChangeTodo(e.target.id)}} className="todo-ck" checked={false}>
+                        
+                        {todos.todo_contents}
+                        </Checkbox>   
+                    )
+                }
+                </div>
                    ) 
                 })
                 ):(

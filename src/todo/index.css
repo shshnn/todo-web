@@ -61,15 +61,21 @@
 #todo-list{
     width: 500px;
     height: 405px;
-    border: 2px solid #098fa6;
+    border: none;
 }
 #todo-list-todo{
     width: 100%;
     height: 40px;
     border-bottom:1px solid #00D8FF;
 }
+#todo-ck-style{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
 #todo-ck{
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
-    
+    margin-left: 5px;
+    font-size: 18px;
 }
